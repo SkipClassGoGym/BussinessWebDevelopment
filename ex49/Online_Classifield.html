@@ -1,0 +1,103 @@
+<html>
+	<head>
+      	<meta charset="UTF-8">
+		<title> Online_Classified Nguyễn Quốc Thịnh</title>
+	</head>
+	<body bgcolor="cyan">
+            <font color = red> 
+			 <h1> <b> Online Classified Search Form </b> </h1>
+             </font>
+             <hr/>
+             <ol type ="1">
+                <li>
+                    <p><b>Search for a classified in the following sections</b></p>
+                      
+           <form>
+    <input type="radio" id="employment" name="section" value="Employment">
+    <label for="employment">Employment</label>
+
+    <input type="radio" id="personal" name="section" value="Personal">
+    <label for="personal">Personal</label><br>
+
+    <input type="radio" id="forsale" name="section" value="For Sale">
+    <label for="forsale">For Sale &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+    <input type="radio" id="misc" name="section" value="Miscellaneous">
+    <label for="misc">Miscellaneous</label> <br>
+
+    <input type="radio" id="housing" name="section" value="Housing">
+    <label for="housing">Housing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+    <input type="radio" id="all" name="section" value="All of the above">
+    <label for="all">All of the above</label><br><br>
+</form>
+
+                </li>
+            
+            <li>
+                <p><b>Search the following publications:</b></p>
+                <form>
+                <input type="checkbox" id="midwest" name="section" value="Midwests Times">
+                <label for="midwest">Midwests Times &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="checkbox" id="modern" name="section" value="Modern News">
+                <label for="modern">Modern News</label><br>
+
+                <input type="checkbox" id="employment" name="section" value="Employment Today">
+                <label for="employment">Employment Today &nbsp;</label>
+
+                <input type="checkbox" id="greatlakes" name="section" value="Great Lakes Classifieds">
+                <label for="greatlakes">Great Lakes Classifieds</label><br>
+
+                <input type="checkbox" id="middleton" name="section" value="Middleton Daily">
+                <label for="middleton">Middleton Daily&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+                <input type="checkbox" id="cashtown" name="section" value="Cashtown Daily News">
+                <label for="cashtown">Cashtown Daily News</label><br><br>
+                </form>
+            </li>
+
+            <li>
+                <form>
+                <label for="from"><b>From</b></label>
+                <input type="date" id="from" name="from">
+
+                <label for="to"><b>To</b></label>
+                <input type="date" id="to" name="to"><br><br>
+
+                <input type="submit" value="Search">
+                </form>
+
+            </li>
+            <li>
+                <p>
+                <b>Enter a few keywords to describe the classified</b><p/>
+                <input type="text" id="keywords" name="keywords" size="40">
+                </p>
+
+            </li>
+            <li>
+            <p><b>Click one of the options below:</b></p>
+
+            
+            <a href="#" onclick="alert('Searching...'); return false;">
+                <img src="Search.gif" alt="Search" title="Search">
+            </a>
+
+         
+            <a href="help.html" target="_blank">
+                <img src="Help.gif" alt="Help" title="Help">
+            </a>
+
+           
+            <a href="#" onclick="document.getElementById('myForm').reset(); return false;">
+                <img src="Cancel.gif" alt="Cancel" title="Cancel">
+            </a>
+            </li>
+
+
+
+
+             </ul>
+	</body>
+</html>
