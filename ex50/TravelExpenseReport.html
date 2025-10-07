@@ -1,0 +1,114 @@
+<html>
+	<head>
+      	<meta charset="UTF-8">
+		<title> K234111452 - Nguyễn Quốc Thịnh </title>
+	</head>
+	<body bgcolor="E0FFFF">
+			 <p align ="center">
+                <img src ="DeLong.jpg"/>
+             </p>
+
+             <h2>
+                <b>Trave Expense Report</b>
+             </h2>
+            
+           <hr style="height: 2px; background-color: black;">
+
+    <form>
+        <ol>
+            <li>
+              <label for ="fn"> First Name: </label> 
+                <input type = "text" name = "FirstName" id="fn">
+              <label for ="ln"> Last Name: </label>  
+                <input type = "text" name = "LastName" id="ln">
+            </li>
+        </br>
+            <li>
+                <label for ="SSN">Social Security Number: </label>
+                <input type = "text" name ="SSN" id="SSN">
+            </li>
+         </br>
+            <li>
+                <label for =depart>Department: </label>
+                <select id = depart>
+                    <option>Accounting</option>
+                </select>
+            </li>
+        </br>
+            <li>
+                <label for ="purpose">Describe the purpose of your trip:</label>
+            </br>
+            </br>
+            <textarea cols="50" rows ="10" id ="purpose"></textarea>
+            </li>
+        </br>
+        <li>
+            Itemize your travel expense: 
+            <br>
+            <br>
+            <table border=1 cellpadding= 10>
+                <tr>
+                    <th>
+                        Date
+                    </th>
+
+                    <th>
+                        Description
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        Amount
+                    </th>
+                </tr>
+                <tr>
+                    <td> <input type = "date" name ="date_row_1"></td>
+                    <td> <input type = "text" name ="descript_row_1"></td> 
+                    <td><select> <option>Meal</option></select></td>
+                    <td><input type ="text" name="amount_row_1"></td>
+                </tr>
+
+                <tr>
+                    <td> <input type = "date" name ="date_row_2"></td>
+                    <td> <input type = "text" name ="descript_row_2"></td> 
+                    <td><select> <option>Meal</option></select></td>
+                    <td><input type ="text" name="amount_row_2"></td>
+                </tr>
+
+                <tr>
+                    <td> <input type = "date" name ="date_row_3"></td>
+                    <td> <input type = "text" name ="descript_row_3"></td> 
+                    <td><select> <option>Meal</option></select></td>
+                    <td><input type ="text" name="amount_row_3"></td>
+                </tr>
+
+                <tr>
+                    <td> <input type = "date" name ="date_row_4"></td>
+                    <td> <input type = "text" name ="descript_row_4"></td> 
+                    <td><select> <option>Meal</option></select></td>
+                    <td><input type ="text" name="amount_row_4"></td>
+                </tr>
+            </table>
+        </li>
+
+            <li>
+                Have you submitted your receipt? 
+                <input type = 'radio' name="yes"> Yes
+                <input type = 'radio' name="no"> No
+            </br>  
+            </br>  
+                <button type ="submit"  onclick="alert(' Form submitted!')">Submit travel expense</button>
+                <button type = "reset"  >Reset</button>
+            </li>     
+        </ol>
+    </form>
+<p>
+    Question? Contact Debbie Larson in Accounting (ext 2150)
+</p>
+
+          
+	</body>
+</html> 

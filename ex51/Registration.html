@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>K234111452 - Nguyễn Quốc Thịnh</title>
+  </head>
+  <body bgcolor="lightgreen">
+    <p align="center">
+      <img src="Logo.gif">
+    </p>
+
+    <h1 align="center">
+      <font color="white">Newborn Registration</font>
+    </h1>
+
+    <p>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" />
+    </p>
+
+    <form>
+      <ol>
+        <li>
+          <label for="Infant_First">Infant's first name:</label>
+          <input type="text" id="Infant_First" name="Infant_First" />
+          <label for="Infant_Last">Last:</label>
+          <input type="text" id="Infant_Last" name="Infant_Last" />
+        </li>
+        <br>
+
+        <li>
+          <label for="Medical_Record">Medical Record #:</label>
+          <input type="text" id="Medical_Record" name="Medical_Record" />
+        </li>
+        <br>
+
+        <li>
+          <label for="DOB">Date of birth:</label>
+          <input type="date" id="DOB" name="DOB" />
+        </li>
+        <br>
+
+        <li>
+          <label for="Birth_Weight">Birth weight:</label>
+          <input type="text" id="Birth_Weight" name="Birth_Weight" />
+        </li>
+        <br>
+
+        <li>
+          <label for="APGAR">APGAR score:</label>
+          <input type="text" id="APGAR" name="APGAR" />
+        </li>
+        <br>
+
+        <li>
+          <label for="Mother_First">Mother's first name:</label>
+          <input type="text" id="Mother_First" name="Mother_First" />
+          <label for="Mother_Last">Last:</label>
+          <input type="text" id="Mother_Last" name="Mother_Last" />
+        </li>
+        <br>
+
+        <li>
+          <label for="Father_First">Father's first name:</label>
+          <input type="text" id="Father_First" name="Father_First" />
+          <label for="Father_Last">Last:</label>
+          <input type="text" id="Father_Last" name="Father_Last" />
+        </li>
+        <br>
+
+        <!-- Đây là mục 8, nằm TRONG <ol> -->
+        <li>
+          <label for="Physician">Physician (check all that apply):</label><br>
+          <select id="Physician" name="Physician" multiple size="4" style="width:220px; margin-top:4px;">
+            <option>Dr. Warren Albert</option>
+            <option>Dr. Maria Alvarez</option>
+            <option>Dr. Karen Brinkman</option>
+            <option>Dr. Micheal Kerry</option>
+            <option>Dr. John Lee</option>
+            <option>Dr. Hannah Scott</option>
+            <option>Dr. Peter Wong</option>
+            <option>Dr. Emily Tran</option>
+          </select>
+        </li>
+      </ol>
+
+<div style="text-align:center; margin-top:20px;">
+  <button>Register</button>
+  <button>Cancel</button>
+</div>
+
+    </form>
+  </body>
+</html>
