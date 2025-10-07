@@ -1,0 +1,52 @@
+<html>
+	<head>
+      	<meta charset="UTF-8">
+		<title> This is the title of the website </title>
+        <script>
+            function change_color(value)
+            {
+                mydiv=document.getElementById("mydiv")
+                mydiv.setAttribute("style","width: 100%; height: 50px; background-color: "+ value)
+            }
+
+            function change_image(value)
+            {
+                {
+                // Ẩn tất cả ảnh trước
+                document.getElementById("LVB1").style.display = "none";
+                document.getElementById("LVB2").style.display = "none";
+                document.getElementById("LVB3").style.display = "none";
+                document.getElementById("LVB4").style.display = "none";
+
+                // Hiện ảnh được chọn (id trùng với value)
+                document.getElementById(value).style.display = "block";
+            }
+            }
+        </script>
+	</head>
+	<body>
+			<form>
+                <select name ="color" id ="color" onchange ="change_color(this.value)">
+                    <option value = "blue">Xanh lè</option>
+                    <option value = "red"> Đỏ choét</option>
+                    <option value ="yellow"> Vàng khè</option>
+                </select>
+                <div style ="width: 100%; height: 50px;background-color:  pink;" id = "mydiv">
+                </div>
+                <select name ="author" id ="author" onchange ="change_image(this.value)">
+                    <option value ="LVB1">Ông A</option>
+                    <option value ="LVB2">Ông B</option>
+                    <option value ="LVB3">Ông C</option>
+                    <option value ="LVB4">Ông D</option>
+                </select>
+
+                <div>
+                    <img id = "LVB1" style ="display: none;" src ="images\LVB1.jpg">
+                    <img id = "LVB2" style ="display: none;" src ="images\LVB2.jpg">
+                    <img id = "LVB3" style ="display: none;" src ="images\LVB3.jpg">
+                    <img id = "LVB4" style ="display: none;" src ="images\LVB4.jpg">
+
+                </div>
+            </form>
+	</body>
+</html>

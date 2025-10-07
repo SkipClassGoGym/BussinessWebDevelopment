@@ -1,0 +1,30 @@
+<html>
+	<head>
+      	<meta charset="UTF-8">
+		<title> This is the title of the website </title>
+        <script>
+            function show_hide_image(value)
+            {
+                //step1: get image element
+                img_taylor = document.getElementById("taylor123")
+                //step2: hide image (using style display -> none)
+                img_taylor.style = "display:" + value
+            }
+        </script>
+	</head>
+	<body>
+			<form name = "myform">
+                <input type ="radio" name ="myname" id ="img1" onchange ="show_hide_image('block')"/>
+                <label for ="img1">Show Image </label>
+                <br/>
+                <input type ="radio" name ="myname" id ="img2" onchange ="show_hide_image('none')"/> 
+                <label for ="img2">Hide Image </label>
+
+                <img src ="images\Jackson.gif" id = "taylor123" name ="taylor123" 
+                style ="display: block;"> 
+            
+
+            </form>
+	</body>
+</html>
+
