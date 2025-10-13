@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Product List - Nguyễn Quốc Thịnh</title>
+</head>
+<body>
+  <h2>List of Products</h2>
+  <form name="productForm" method="get" action="display_total.html" target ="blank">
+    <table border="1" cellpadding="6" cellspacing="0">
+      <tr>
+        <th>Part Number</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Item total</th>
+      </tr>
+
+      <tr>
+        <td>C112</td>
+        <td>Mouse</td>
+        <td>19.95$</td>
+        <td><input type="text" name="qty1" size="5"></td>
+        <td><input type="text" name="item1" size="10" readonly></td>
+      </tr>
+
+      <tr>
+        <td>B124</td>
+        <td>Keyboard US</td>
+        <td>29.95$</td>
+        <td><input type="text" name="qty2" size="5"></td>
+        <td><input type="text" name="item2" size="10" readonly></td>
+      </tr>
+
+      <tr>
+        <td>U125</td>
+        <td>USB KingMax</td>
+        <td>39.95$</td>
+        <td><input type="text" name="qty3" size="5"></td>
+        <td><input type="text" name="item3" size="10" readonly></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" align="right"><b>Total:</b></td>
+        <td><input type="text" name="total" id="total" readonly></td>
+      </tr>
+    </table>
+    <br>
+    <!-- Nút Sum vừa tính vừa gửi GET -->
+    <button type="submit" onclick="calculateTotal()">Sum</button>
+  </form>
+
+  <script>
+    function calculateTotal() {
+      let p1 = 19.95, p2 = 29.95, p3 = 39.95;
+      let q1 = parseFloat(document.productForm.qty1.value) || 0;
+      let q2 = parseFloat(document.productForm.qty2.value) || 0;
+      let q3 = parseFloat(document.productForm.qty3.value) || 0;
+
+      let i1 = q1 * p1;
+      let i2 = q2 * p2;
+      let i3 = q3 * p3;
+
+      document.productForm.item1.value = i1.toFixed(2);
+      document.productForm.item2.value = i2.toFixed(2);
+      document.productForm.item3.value = i3.toFixed(2);
+
+      document.getElementById("total").value = (i1 + i2 + i3).toFixed(2);
+    }
+  </script>
+</body>
+</html>

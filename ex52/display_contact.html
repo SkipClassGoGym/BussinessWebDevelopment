@@ -1,0 +1,18 @@
+<html>
+	<head>
+      	<meta charset="UTF-8">
+		<title>Contact Data Received</title>
+	</head>
+	<body>
+		<h2>Data Received from Contact Form</h2>
+		<script>
+			// lấy dữ liệu GET trên URL
+			const data = new URLSearchParams(window.location.search);
+			document.write("<p><b>Full name:</b> " + data.get("full_name") + "</p>");
+			document.write("<p><b>Email:</b> " + data.get("email") + "</p>");
+			document.write("<p><b>Send to:</b> " + data.get("department") + "</p>");
+			document.write("<p><b>Title:</b> " + data.get("title") + "</p>");
+			document.write("<p><b>Content:</b> " + data.get("content") + "</p>");
+		</script>
+	</body>
+</html>

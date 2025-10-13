@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Display Total - Result</title>
+</head>
+<body>
+  <h2>Order Summary</h2>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.write("<p>Quantity Mouse: " + params.get("qty1") + "</p>");
+    document.write("<p>Quantity Keyboard: " + params.get("qty2") + "</p>");
+    document.write("<p>Quantity USB: " + params.get("qty3") + "</p>");
+    document.write("<p>Total Price: $" + params.get("total") + "</p>");
+  </script>
+</body>
+</html>

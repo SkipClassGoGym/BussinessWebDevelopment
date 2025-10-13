@@ -1,0 +1,72 @@
+<html>
+	<head>
+      	<meta charset="UTF-8">
+		<title> First Degree - Thịnh </title>
+        <script type="text/javascript">
+            function do_solution()
+            {
+                //Làm về số thì dùng hàm eval để đưa về số 
+             a = eval(myform.a_coefficient.value)
+             b =eval(myform.b_coefficient.value)
+             result_td = document.getElementById("result_td")
+             result=""
+             if(a==0 && b==0)
+             {result ="INF"}
+            else if (a==0 && b!=0)
+            {
+                result =" No solution"
+            }
+            else
+            {
+                result ="x ="+(-b/a)
+            }
+            result_td.innerHTML=`${result}` //Truy xuất các biến
+            }
+            function do_clear()
+            {
+                //type = reset chỉ clear phần tử trong form phải bổ sung code để clear cái ngoài form
+                document.getElementById("result_td").innerHTML=""
+                //khi clear nó sẽ trỏ con chuột về vị trí bắt đầu 
+                myform.a_coefficient.focus()
+            }
+            function open_help()
+            {
+                if(confirm("open help ?"))
+            {
+                window.open('https://uel.edu.vn',"_blank")
+            }
+            }
+
+        </script>
+	</head>
+	<body>
+			 <form name = "myform">
+                <table>
+                    <tr>
+                        <td>A coeff:</td>
+                        <td> <input type = "text" name ="a_coefficient" id ="a_coefficient"></td>
+                    </tr>
+
+                    <tr>
+                        <td>B coeff:</td>
+                        <td> <input type = "text" name ="b_coefficient" id ="b_coefficient"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Result:</td>
+                        <td id ="result_td"></td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>
+                            <button type ="button" onclick ="do_solution()">Solution</button>
+                            <button type = "reset" onclick ="do_clear()">Reset</button>
+                            <button type = "button" onclick ="open_help()">Help</button>
+                        </td>
+                    </tr>
+
+                </table>
+             </form>
+	</body>
+</html>
